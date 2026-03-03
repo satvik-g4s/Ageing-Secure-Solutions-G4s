@@ -29,15 +29,14 @@ uploaded_file3 = st.file_uploader("Upload Rebilled Invoice File (Excel)", type=[
 st.caption("Columns: SoLocn, Hub, CustNo, Customer Name, InvNo, Old invoice Date,    Amount  , Rebilled Invoice, Date,   Amount , Sub Category")
 
 uploaded_file4 = st.file_uploader("Upload Ageing CSV File (CSV)", type=["csv"])
-st.caption("Header Row Number Required")
 
 uploaded_file5 = st.file_uploader("Upload Mapping File (Excel)", type=["xlsx"])
 st.caption("Sheets: Mapping (Old So Code, Branch) | SA List (Customer Code, SA)")
 
-header_row_sales = st.number_input("Sales Reversal Header Row", min_value=0, value=1)
+header_row_sales = 1
 sheet_name_sales = st.text_input("Sales Reversal Sheet Name", value="Sales Reversal")
 
-header_row_ageing = st.number_input("Ageing CSV Header Row", min_value=0, value=2)
+header_row_ageing =2
 
 run = st.button("Run")
 
