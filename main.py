@@ -34,7 +34,7 @@ uploaded_file5 = st.file_uploader("Upload Mapping File (Excel)", type=["xlsx"])
 st.caption("Sheets: Mapping (Old So Code, Branch) | SA List (Customer Code, SA)")
 
 header_row_sales = 1
-sheet_name_sales = st.text_input("Sales Reversal Sheet Name", value="Sales Reversal")
+sheet_name_sales ="Sales Reversal"
 
 header_row_ageing =2
 
